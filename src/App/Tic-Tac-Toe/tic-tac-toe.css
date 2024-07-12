@@ -1,0 +1,84 @@
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #0ff1;
+    width: fit-content;
+    min-width: min(100vw, 33vmax) !important;
+}
+
+.board-cell {
+    margin: 1vmin;
+    border: 1px solid black;
+    width: 20vmin;
+    height: 20vmin;
+    line-height: 20vmin;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    font-size: 10vmin;
+    font-weight: bold;
+}
+
+#board-screen {
+    display: flex;
+    margin: 1vmin;
+    color: #f5e7cc;
+    -webkit-text-stroke: 1px #787368;
+    padding: 0 1vmin 0 1vmin;
+    user-select: none;
+}
+
+#info-screen {
+    display: flex;
+    margin: 1vmin;
+    min-width: 30vmin;
+    flex: 1;
+    min-height: 74vh;
+}
+
+#sub {
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.board-cell.unmrk {
+    background-color: #888;
+}
+
+.board-cell.unmrk:hover {
+    background-color: rgb(105, 176, 176);
+}
+
+.board-cell.mrkd {
+    background-color: #aaa;
+}
+
+.board-cell.won {
+    background-color: #afa;
+}
+
+.board-cell.vic {
+    background-color: #5b5;
+}
+
+.board-cell.vic,
+.board-cell.won {
+    text-shadow: 1px 1px 10px #fff;
+}
+
+.board-cell.lost {
+    background-color: #faa;
+}
+
+.info-subs {
+    width: 100%;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    background-color: azure;
+}
+
+.pe-non {
+    pointer-events: none;
+}
